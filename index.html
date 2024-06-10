@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Smith - Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="intro">
+            <img src="images/photoEM.jpg" alt="Emily Smith" class="emily-photo">
+            <h1>Emily Smith</h1>
+            <p>Freelance Graphic Designer</p>
+            <a href="#portfolio" class="cta-button">View Portfolio</a>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <div class="portfolio-item">
+                <img src="images/photoEM.jpg" alt="Project 1">
+                <div class="description">
+                    <h3>Project Title 1</h3>
+                    <p>Short description of the project.</p>
+                    <a href="project1.html">View Details</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/photoEM.jpg" alt="Project 2">
+                <div class="description">
+                    <h3>Project Title 2</h3>
+                    <p>Short description of the project.</p>
+                    <a href="project2.html">View Details</a>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a talented computer science enthusiast with a passion for problem-solving and creativity. 
+            With over 4 years of experience in the industry,I have honed her skills in programming, 
+            cybersecurity, and artificial intelligence. From developing complex algorithms to creating 
+            innovative software solutions, My expertise knows no bounds.
+            My journey in the world of computer science began at an early age, fueled by her curiosity 
+            and dedication to mastering new technologies. I hold a Master's degree in Computer Science 
+            from a prestigious university, where she specialized in machine learning and data analysis.
+            As a dedicated professional, I offer a wide range of services to meet the unique needs of my 
+            clients. Whether you're looking to build a cutting-edge mobile app, secure your systems 
+            against cyber threats, or optimize your data analytics processes,I have the skills and 
+            knowledge to deliver top-notch solutions.
+            When I'm not immersed in lines of code,I enjoys hiking in the great outdoors, experimenting 
+            with new recipes in the kitchen, and volunteering at local tech events to inspire the next 
+            generation of computer science enthusiasts</p>
+        <p>Emily offers a range of services including logo design, branding, web design, and more. She has worked with clients from various industries, helping them to bring their visions to life.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="send_email.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="confirmation" class="confirmation" style="display: none;">
+            Thank you! Your message has been sent successfully.
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Emily Smith. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
